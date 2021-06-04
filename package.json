@@ -9,12 +9,8 @@
     "start": "npx nodemon src/index.ts",
     "jasmine": "jasmine",
     "prettier": "prettier --config .prettierrc  'src/**/*.ts' --write",
-    "eslint": "npx eslint src/**/*.ts"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run eslint"
-    }
+    "eslint": "npx eslint src/**/*.ts",
+    "husky": "husky install"
   },
   "repository": {
     "type": "git",
