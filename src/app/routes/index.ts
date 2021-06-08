@@ -1,12 +1,10 @@
 import express from "express";
-import resizeRoute from "@routes/api/image-resize";
+import transformRoute from "@app/routes/api/transform-route";
 
 const routes = express.Router();
 
-routes.get("/", (req, res) => {
-  
-});
+routes.get("/", (req, res) => {});
 
-routes.use("/images", resizeRoute);
+routes.use("/images", transformRoute);
 
 export default routes;

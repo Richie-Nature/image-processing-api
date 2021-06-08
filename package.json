@@ -8,14 +8,15 @@
     "build": "npx tsc",
     "start": "npx nodemon src/app/index.ts",
     "jasmine": "jasmine",
-    "prettier": "prettier --config .prettierrc  'src/**/*.ts' --write",
+    "prettier": "prettier --config .prettierrc  src/**/*.ts --write",
     "eslint": "npx eslint src/**/*.ts",
     "husky": "husky install"
   },
   "_moduleAliases": {
     "@app": "./dist/app",
     "@tests": "./dist/tests",
-    "@routes": "./dist/app/routes"
+    "@routes": "./dist/app/routes",
+    "@utils": "./dist/app/utils"
   },
   "repository": {
     "type": "git",
